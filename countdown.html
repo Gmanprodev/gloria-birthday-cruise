@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdowns - Gloria's 70th Birthday Cruise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/main.css">
+    <style>
+        .countdown-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .countdown-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .countdown-card h2 {
+            color: var(--text-dark);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .countdown-card .countdown-subtitle {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .countdown-card .countdown {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .countdown-card .countdown-item {
+            background: var(--gradient);
+            color: var(--white);
+        }
+
+        @media (max-width: 768px) {
+            .countdown-grid {
+                grid-template-columns: 1fr;
+                padding: 40px 20px;
+            }
+
+            .countdown-card {
+                padding: 30px 20px;
+            }
+
+            .countdown-card h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Gloria's 70th Birthday Cruise</a>
+            <button class="burger-menu" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reminder.html">Reminders</a></li>
+                <li><a href="countdown.html">Countdowns</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="countdown-section">
+            <div class="container">
+                <h1>Important Dates</h1>
+                <p style="font-size: 1.2rem; opacity: 0.9; max-width: 700px; margin: 0 auto;">Keep track of all the key milestones leading up to our cruise adventure</p>
+            </div>
+        </section>
+
+        <div class="countdown-grid">
+            <div class="countdown-card">
+                <h2>Final Payment</h2>
+                <p class="countdown-subtitle">November 12, 2025</p>
+                <div class="countdown" id="paymentCountdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-days>0</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-hours>0</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-minutes>0</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-seconds>0</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="countdown-card">
+                <h2>Meeting Up</h2>
+                <p class="countdown-subtitle">February 21, 2026</p>
+                <div class="countdown" id="meetingCountdown">
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-days>0</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-hours>0</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-minutes>0</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-seconds>0</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="countdown-card">
+                <h2>Departure Date</h2>
+                <p class="countdown-subtitle">March 6, 2026</p>
+                <div class="countdown" id="departureCountdown2">
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-days>0</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-hours>0</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-minutes>0</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" data-seconds>0</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="index.html" class="footer-logo">Gloria's 70th Birthday Cruise</a>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reminder.html">Reminders</a></li>
+                <li><a href="countdown.html">Countdowns</a></li>
+            </ul>
+            <p class="footer-text">&copy; 2025 Gloria's Birthday Celebration</p>
+        </div>
+    </footer>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
