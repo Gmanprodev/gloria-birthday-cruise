@@ -1,22 +1,3 @@
-// Burger Menu Toggle
-const burgerMenu = document.querySelector('.burger-menu');
-const navLinks = document.querySelector('.nav-links');
-
-if (burgerMenu) {
-    burgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        burgerMenu.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            burgerMenu.classList.remove('active');
-        });
-    });
-}
-
 // Countdown Timer Function
 function updateCountdown(targetDate, elementId) {
     const countdownElement = document.getElementById(elementId);
