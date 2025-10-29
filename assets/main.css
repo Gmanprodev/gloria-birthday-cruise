@@ -15,7 +15,7 @@ html {
     --text-light: #64748b;
     --bg-light: #f8fafc;
     --white: #ffffff;
-    --gradient: repeating-linear-gradient(
+    /* --gradient: repeating-linear-gradient(
         45deg,
         #d4af37 0px,
         #d4af37 20px,
@@ -25,7 +25,8 @@ html {
         #d4af37 60px,
         #b8860b 60px,
         #b8860b 80px
-    );
+    ); */
+    --gradient: #088F8F; /* A solid color as a placeholder for gradient */
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
@@ -131,7 +132,7 @@ body {
 /* Countdown Section */
 .countdown-section {
     background: var(--gradient);
-    color: #6b2c2c;
+    color: var(--white);
     padding: 80px 20px;
     text-align: center;
 }
@@ -236,7 +237,7 @@ body {
 .itinerary-content h3 {
     font-size: 1.8rem;
     margin: 15px 0;
-    color: #6b2c2c;
+    color: #088F8F;
 }
 
 .itinerary-content p {
@@ -246,7 +247,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #e8dcc0;
+    background: #088F8F;
     color: var(--white);
     padding: 50px 20px 30px;
 }
@@ -261,7 +262,7 @@ body {
 .footer-logo {
     font-size: 1.3rem;
     font-weight: 700;
-    background: #6b2c2c;
+    background: #d4af37;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -277,7 +278,7 @@ body {
 }
 
 .footer-links a {
-    color: #b8860b;
+    color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -287,7 +288,7 @@ body {
 }
 
 .footer-text {
-    color: #b8860b;
+    color: var(--white);
     font-size: 0.9rem;
     text-align: center;
 }
